@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <TextView
+        android:id="@+id/tvIncomingCall"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incoming Call"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/phone_outgoing"
+        android:drawablePadding="4dp"
+        android:drawableTint="@color/black"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thane | Maharashtra"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/location"
+        android:drawablePadding="4dp"
+        android:drawableTint="@color/black"
+        android:layout_alignParentEnd="true" />
+
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tvIncomingCall"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/circle_shape"
+        android:clipToOutline="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/personal" />
+
+    <TextView
+        android:id="@+id/tvContactName"
+ android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sarvesh Plumbing..."
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_alignTop="@id/ivProfile"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:alpha="0.8"
+        android:layout_toEndOf="@id/ivProfile" />
+
+    <TextView
+        android:id="@+id/tvNumber"
+ android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvContactName"
+        android:layout_alignBottom="@id/ivProfile"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="-9dp"
+        android:layout_toEndOf="@id/ivProfile"
+        android:text="Tobiiii"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/btnDecline"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tvLocation"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="18dp"
+        android:layout_toStartOf="@+id/btnAccept"
+        android:src="@drawable/decline_call" />
+
+    <ImageView
+        android:id="@+id/btnAccept"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tvLocation"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/pick_up_call" />
+
+
+    <Button
+        android:id="@+id/hangup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tvContactName"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+
+        android:background="@drawable/hangup_btn_shape"
+        android:drawableStart="@drawable/hangup"
+        android:drawablePadding="4dp"
+        android:drawableTint="#FF0000"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:scaleType="fitCenter"
+        android:text="Hang Up"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvContactName"
+        android:layout_alignStart="@id/ivProfile"
+        android:layout_alignEnd="@id/btnAccept"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="4dp"
+        android:background="?android:attr/listDivider"
+        />
+
+
+    <TextView
+        android:id="@+id/msgOutgoing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvContactName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="28dp"
+        android:contentDescription="msg"
+        android:drawableStart="@drawable/messages"
+        android:drawablePadding="4dp"
+        android:drawableTint="#5864F8"
+        android:padding="4dp"
+
+        android:text="Message"
+        android:textAlignment="center"
+        android:textColor="#5864F8"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/msgIncoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvContactName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:contentDescription="msg"
+        android:drawableStart="@drawable/messages"
+        android:drawablePadding="4dp"
+        android:drawableTint="#5864F8"
+        android:padding="4dp"
+        android:text="Message"
+        android:textAlignment="center"
+
+        android:textColor="#5864F8"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
+
